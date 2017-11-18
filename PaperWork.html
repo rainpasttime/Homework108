@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="./Scores.js"></script>
+
+
+    <style>
+        h1{
+            text-align:left;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        textarea{
+            width: 300px;
+            height:100px;
+        }
+    </style>
+    <title>PaperWork</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-md-12">
+        <h1>统一建模语言理论测试</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        考试科目：统一建模语言
+    </div>
+    <div class="col-md-4">
+        时间：100分钟
+    </div>
+    <div class="col-md-4" id="Sum_Scores">
+        得分：100
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        班级：<input type="text " value="一班">
+    </div>
+    <div class="col-md-4">
+        学号：<input type="text" value="001">
+    </div>
+    <div class="col-md-4">
+        姓名：<input type="text" value="王小明">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>一、填空题，每空5分，共20分</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        1.UML的中文全称是:<input type="text" value="统一建模语言" name="blanksOne">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        2.对象最突出的特征是
+        <input type="text" value="封装性" name="blanksTwo">
+        <input type="text" value="继承性" name="blanksThree">
+        <input type="text" value="多态性" name="blanksFour">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>二、选择题，每空10分，共20分</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        1.UML与软件工程的关系
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" name="RadioA">(A).UML就是软件工程
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" checked="checked" name="RadioA">(B).UML参与到软件工程软件开发过程的几个阶段
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" name="RadioA">(C).UML与软件工程无关
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" name="RadioA">(D).UML是软件工程的一部分
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        2.Java语言支持
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" checked="checked" name="RadioB">(A).单继承
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" name="RadioB">(B).多继承
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" name="RadioB">(C).单继承和多继承都支持
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="radio" name="RadioB">(D).单继承和多继承都不支持
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>三、多选题，每空10分，共20分</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        1.用例的粒度分为以下哪三种？
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" checked="checked" name="CheckBoxA">(A).概述级
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" checked="checked" name="CheckBoxA">(B).需求级
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" name="CheckBoxA">(C).用户目标级
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" checked="checked" name="CheckBoxA">(D).子功能级
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        2.类图由以下哪三部分组成
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" checked="checked" name="CheckBoxB">(A).名称（Name）
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" checked="checked" name="CheckBoxB">(B).属性（Attribute）
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" checked="checked" name="CheckBoxB">(C).操作（Operation）
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input type="checkbox" name="CheckBoxB">(D).方法（Function）
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>四、判断题，每空10分，共20分</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        1.用例只是用于和客户交流和沟通的,用于确定需求<input type="radio" name="JudgeA">√<input type="radio" checked="checked" name="JudgeA">×
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        2.在状态图中终止状态允许有任意多个<input type="radio" checked="checked" name="JudgeB">√<input type="radio" name="JudgeB">×
+    </div>
+</div>
+<div class="row">
+    <h2>五、简答题，每题20分，共20分</h2>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        1.简述什么是模型以及模型的表现形式
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <label>
+        <textarea name="shortAnswer">模型是对现实世界的简化和抽象,模型是对所研究的系统,过程,事物或概念的一种表达形式.可以是物理实体;可以是某种图形;或者是一种数学表达式.</textarea>
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <button type="submit" onclick="get_Scores()">计算分数</button>
+    </div>
+</div>
+</body>
+</html>
