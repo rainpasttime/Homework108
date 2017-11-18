@@ -5,8 +5,8 @@
 
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="./Scores.js"></script>
+    <script src="/../../h5/bootstrap-3.3.7-dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main/main.js"></script>
 
 
     <style>
@@ -38,19 +38,25 @@
     <div class="col-md-4">
         时间：100分钟
     </div>
-    <div class="col-md-4" id="Sum_Scores">
-        得分：100
+    <div class="col-md-4">
+        <p id="scores">得分：</p>
     </div>
 </div>
 <div class="row">
     <div class="col-md-4">
-        班级：<input type="text " value="一班">
+        <label>
+            班级：<input type="text" name="class">
+        </label>
     </div>
     <div class="col-md-4">
-        学号：<input type="text" value="001">
+        <label>
+            学号：<input type="text" name="id">
+        </label>
     </div>
     <div class="col-md-4">
-        姓名：<input type="text" value="王小明">
+        <label>
+            姓名：<input type="text" name="name">
+        </label>
     </div>
 </div>
 <div class="row">
@@ -60,15 +66,21 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        1.UML的中文全称是:<input type="text" value="统一建模语言" name="blanksOne">
+        1.UML的中文全称是:
+        <label>
+            <input type="text" name="fillBlanks">
+        </label>
+
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
         2.对象最突出的特征是
-        <input type="text" value="封装性" name="blanksTwo">
-        <input type="text" value="继承性" name="blanksThree">
-        <input type="text" value="多态性" name="blanksFour">
+        <label>
+            <input type="text" name="fillBlanks">
+            <input type="text" name="fillBlanks">
+            <input type="text" name="fillBlanks">
+        </label>
     </div>
 </div>
 <div class="row">
@@ -83,22 +95,30 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" name="RadioA">(A).UML就是软件工程
+        <label>
+            <input type="radio" name="RadioOne">(A).UML就是软件工程
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" checked="checked" name="RadioA">(B).UML参与到软件工程软件开发过程的几个阶段
+        <label>
+            <input type="radio" name="RadioOne">(B).UML参与到软件工程软件开发过程的几个阶段
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" name="RadioA">(C).UML与软件工程无关
+        <label>
+            <input type="radio" name="RadioOne">(C).UML与软件工程无关
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" name="RadioA">(D).UML是软件工程的一部分
+        <label>
+            <input type="radio" name="RadioOne">(D).UML是软件工程的一部分
+        </label>
     </div>
 </div>
 <div class="row">
@@ -108,22 +128,30 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" checked="checked" name="RadioB">(A).单继承
+        <label>
+            <input type="radio" name="RadioTwo">(A).单继承
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" name="RadioB">(B).多继承
+        <label>
+            <input type="radio" name="RadioTwo">(B).多继承
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" name="RadioB">(C).单继承和多继承都支持
+        <label>
+            <input type="radio" name="RadioTwo">(C).单继承和多继承都支持
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="radio" name="RadioB">(D).单继承和多继承都不支持
+        <label>
+            <input type="radio" name="RadioTwo">(D).单继承和多继承都不支持
+        </label>
     </div>
 </div>
 <div class="row">
@@ -138,22 +166,31 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" checked="checked" name="CheckBoxA">(A).概述级
+        <label>
+            <input type="checkbox" name="multipleOne">(A).概述级
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" checked="checked" name="CheckBoxA">(B).需求级
+        <label>
+            <input type="checkbox" name="multipleOne">(B).需求级
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" name="CheckBoxA">(C).用户目标级
+        <label>
+            <input type="checkbox" name="multipleOne">(C).用户目标级
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" checked="checked" name="CheckBoxA">(D).子功能级
+        <label>
+            <input type="checkbox" name="multipleOne">(D).子功能级
+        </label>
+
     </div>
 </div>
 <div class="row">
@@ -163,22 +200,31 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" checked="checked" name="CheckBoxB">(A).名称（Name）
+        <label>
+            <input type="checkbox" name="multipleTwo">(A).名称（Name）
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" checked="checked" name="CheckBoxB">(B).属性（Attribute）
+        <label>
+            <input type="checkbox" name="multipleTwo">(B).属性（Attribute）
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" checked="checked" name="CheckBoxB">(C).操作（Operation）
+        <label>
+            <input type="checkbox" name="multipleTwo">(C).操作（Operation）
+        </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <input type="checkbox" name="CheckBoxB">(D).方法（Function）
+        <label>
+            <input type="checkbox" name="multipleTwo">(D).方法（Function）
+        </label>
+
     </div>
 </div>
 <div class="row">
@@ -188,12 +234,19 @@
 </div>
 <div class="row">
     <div class="col-md-12">
-        1.用例只是用于和客户交流和沟通的,用于确定需求<input type="radio" name="JudgeA">√<input type="radio" checked="checked" name="JudgeA">×
+        1.用例只是用于和客户交流和沟通的,用于确定需求
+        <label>
+            <input type="radio" name="judgeOne">√<input type="radio" name="judgeOne">×
+        </label>
+
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        2.在状态图中终止状态允许有任意多个<input type="radio" checked="checked" name="JudgeB">√<input type="radio" name="JudgeB">×
+        2.在状态图中终止状态允许有任意多个
+        <label>
+            <input type="radio" name="judgeTwo">√<input type="radio" name="judgeTwo">×
+        </label>
     </div>
 </div>
 <div class="row">
@@ -207,13 +260,13 @@
 <div class="row">
     <div class="col-md-12">
         <label>
-        <textarea name="shortAnswer">模型是对现实世界的简化和抽象,模型是对所研究的系统,过程,事物或概念的一种表达形式.可以是物理实体;可以是某种图形;或者是一种数学表达式.</textarea>
+            <textarea id="shortAnswer"></textarea>
         </label>
     </div>
 </div>
 <div class="row">
     <div class="col-md-12">
-        <button type="submit" onclick="get_Scores()">计算分数</button>
+        <button type="submit" id="submit">计算分数</button>
     </div>
 </div>
 </body>
